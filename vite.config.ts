@@ -10,7 +10,13 @@ export default defineConfig({
     tanstackStart({
       server: { entry: "server" },
     }),
-    netlify(),
+    netlify({
+      dev: {
+        edgeFunctions: {
+          enabled: false,
+        },
+      },
+    }),
     tailwindcss(),
     tsconfigPaths(),
     react(),

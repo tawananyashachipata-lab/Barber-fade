@@ -17,16 +17,19 @@ export const SHOP = {
   name: "Mercer Barbers",
   tagline: "A heritage barber shop for the modern man.",
   address: "24 Ironmonger Row, Clerkenwell, London EC1V 3RP",
-  phone: "020 7946 0000",
-  phoneHref: "tel:+442079460000",
+  phone: "0718676637",
+  phoneHref: "tel:+263718676637",
   email: "chair@mercerbarbers.co.uk",
   established: "Est. 1998 · Clerkenwell",
   mapsUrl:
     "https://www.google.com/maps/search/?api=1&query=24+Ironmonger+Row+Clerkenwell+London+EC1V+3RP",
   socials: [
-    { label: "Instagram", href: "https://instagram.com" },
+    { label: "Instagram", href: "https://www.instagram.com/stayceytech?stkn=ajU5YmdmNmFsdjdu" },
     { label: "Google", href: "https://www.google.com/maps" },
-    { label: "WhatsApp", href: "https://wa.me/442079460000" },
+    {
+      label: "WhatsApp",
+      href: "https://wa.me/263718676637?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment",
+    },
   ],
   hours: [
     { days: "Mon – Fri", time: "09:00 – 19:00" },

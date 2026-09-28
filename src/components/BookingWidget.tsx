@@ -117,10 +117,10 @@ export function BookingWidget() {
             ["Date", formatDateLong(date)],
             [
               "Time",
-              `${time} – ${addMinutes(combineDateTime(date, time), service.minutes).toLocaleTimeString(
-                "en-GB",
-                { hour: "2-digit", minute: "2-digit" },
-              )}`,
+              `${time} – ${addMinutes(
+                combineDateTime(date, time),
+                service.minutes,
+              ).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" })}`,
             ],
             ["Where", SHOP.address],
             ["Contact", `${phone} · ${email}`],
@@ -180,7 +180,9 @@ export function BookingWidget() {
               className={`text-left ${tileBase} ${service?.id === s.id ? tileOn : tileOff}`}
             >
               <span className="block font-medium text-cream">{s.name}</span>
-              <span className={service?.id === s.id ? "text-sm text-brass" : "text-sm text-cream/50"}>
+              <span
+                className={service?.id === s.id ? "text-sm text-brass" : "text-sm text-cream/50"}
+              >
                 £{s.price} · {s.minutes} min
               </span>
             </button>

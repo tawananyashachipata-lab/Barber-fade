@@ -58,8 +58,8 @@ export function PromoModal() {
           15% off your first cut
         </h3>
         <p className="mt-3 text-pretty text-sm text-cream/60">
-          Use code <span className="text-brass font-medium">FIRST15</span> at the desk. Mention it in
-          your booking notes.
+          Use code <span className="text-brass font-medium">FIRST15</span> at the desk. Mention it
+          in your booking notes.
         </p>
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <Link

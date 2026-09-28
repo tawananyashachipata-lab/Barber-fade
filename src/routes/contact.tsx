@@ -56,7 +56,18 @@ function Contact() {
                   href={SHOP.phoneHref}
                   className="mt-2 block text-cream/70 hover:text-cream transition-colors"
                 >
-                  {SHOP.phone}
+                  Call: {SHOP.phone}
+                </a>
+                <a
+                  href={
+                    SHOP.socials.find((s) => s.label === "WhatsApp")?.href ??
+                    "https://wa.me/263718676637"
+                  }
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="block text-cream/70 hover:text-cream transition-colors"
+                >
+                  WhatsApp: {SHOP.phone}
                 </a>
                 <a
                   href={`mailto:${SHOP.email}`}
